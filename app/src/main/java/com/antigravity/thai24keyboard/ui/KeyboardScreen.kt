@@ -5,11 +5,9 @@ import android.os.VibrationEffect
 import android.os.Vibrator
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputConnection
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
@@ -218,11 +216,7 @@ fun KeyboardContent(
                 .padding(horizontal = 8.dp),
             contentAlignment = Alignment.Center
         ) {
-            AnimatedVisibility(
-                visible = popupChar != null,
-                enter = fadeIn(),
-                exit = fadeOut()
-            ) {
+            if (popupChar != null) {
                 Surface(
                     shape = RoundedCornerShape(14.dp),
                     color = AccentBlue,
@@ -236,9 +230,7 @@ fun KeyboardContent(
                         modifier = Modifier.padding(horizontal = 14.dp, vertical = 2.dp)
                     )
                 }
-            }
-
-            if (popupChar == null) {
+            } else {
                 Text(
                     text = when (currentMode) {
                         KeyboardMode.THAI_24 -> "แป้นพิมพ์ไทย 24 ปุ่ม (แตะซ้ำพิมพ์ตัวบน)"
@@ -589,10 +581,7 @@ fun FunctionalKeyButton(
             .shadow(1.dp, RoundedCornerShape(7.dp))
             .clip(RoundedCornerShape(7.dp))
             .background(bg)
-            .combinedClickable(
-                onClick = onClick,
-                onLongClick = onClick
-            ),
+            .clickable(onClick = onClick),
         contentAlignment = Alignment.Center
     ) {
         if (icon != null) {
