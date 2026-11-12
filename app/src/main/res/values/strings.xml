@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Thai 24 Keyboard</string>
+    <string name="ime_name">แป้นพิมพ์ไทย 24 ปุ่ม</string>
+    <string name="subtype_thai_24">ไทย 24 ปุ่ม</string>
+    <string name="subtype_en">English</string>
+    
+    <string name="title_setup">ตั้งค่าแป้นพิมพ์ไทย 24 ปุ่ม</string>
+    <string name="step1_title">ขั้นตอนที่ 1: เปิดใช้งานแป้นพิมพ์</string>
+    <string name="step1_desc">เปิดสวิตช์อนุญาตใช้งาน "แป้นพิมพ์ไทย 24 ปุ่ม" ในการตั้งค่าของ Android</string>
+    <string name="step1_btn">ไปที่การตั้งค่าแป้นพิมพ์</string>
+    
+    <string name="step2_title">ขั้นตอนที่ 2: เลือกเป็นแป้นพิมพ์เริ่มต้น</string>
+    <string name="step2_desc">สลับแป้นพิมพ์ปัจจุบันมาเป็น "แป้นพิมพ์ไทย 24 ปุ่ม"</string>
+    <string name="step2_btn">เลือกวิธีป้อนข้อมูล</string>
+    
+    <string name="test_title">ทดสอบพิมพ์ที่นี่</string>
+    <string name="test_hint">แตะที่นี่เพื่อทดลองพิมพ์ด้วยแป้น 24 ปุ่ม...</string>
+    
+    <string name="feature_tip">เคล็ดลับการพิมพ์: แตะ 1 ครั้งได้ตัวอักษรหลัก / แตะซ้ำ 2 ครั้งทันที (Double-tap) เพื่อพิมพ์ตัวอักษรบนโดยไม่ต้องกด Shift!</string>
+</resources>
